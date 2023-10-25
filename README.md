@@ -12,4 +12,6 @@ VITE_UNSPLASH_ACCESS_KEY="keyvalue"
 
 ### 2. Showcase
 
-[Demo]([http://~](https://github.com/minhtrifit/web-advanced-photo-search))
+[Demo](https://github.com/minhtrifit/web-advanced-photo-search)
+
+![Showcase]("public/showcase.png)
