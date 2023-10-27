@@ -12,9 +12,16 @@ const App = () => {
   const [page, setPage] = useState<number>(1);
   const [photos, setPhotos] = useState<any[]>([]);
   const [isLoading, setIsLoading] = useState<boolean>(false);
+  const [history, setHistory] = useState<string>("");
 
   const handleSearchPhoto = async (search: string, page: string) => {
     try {
+      if (history === "") setHistory(search);
+      if (history !== "" && history !== search) {
+        setHistory(search);
+        setPhotos([]);
+      }
+
       setIsLoading(true);
 
       const response = await axiosUnsplash.get(
